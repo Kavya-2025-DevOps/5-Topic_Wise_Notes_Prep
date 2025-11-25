@@ -1,0 +1,183 @@
+************* Interview 1 *************
+
+Self Introduction : I am x, I have z+ years of experence, I worked in y company, I servered as a Devops engineer. In this Role I manages CI/CD pipelines using Jenkins, built AWS Infrastructure using TerraForms, Deployed the application on Kubernetes Clusters. I managed Docker for the containers as well.
+Coming to Version controller I have a Good knowledge on Git and GitHub, Ansible, shell scripting and Linux cmds.
+Certifications : -NA
+
+==========================================
+
+1. What all AWS services you used ?
+ - I have good hands on Experences on EC2, S3, VPC, gateways, RDS(DB), lamda, Cloud watch(monitering).
+
+2. What are all the backend services for lamda ? 
+ - DynamoDB (Learn how to explain this)
+
+3. I have deployed a frontend app on AWS EC2 , but this EC2 is veryslow, the page load is take a lot of time. How will you troubleshoot this ?
+ - Asuming it a linux machine, I will you the cmd Top , h top, PS minus - Based on these I will find which service is consuming more CPU / more memory.
+   Let say I found an x serve is causing an issue, I will try to fix if its possible or I'll Kill the service using Kill cmd and restart it if nessary.
+
+4. What is the difference b/w Public and Private EC2 instances. How will you launch a Public EC2 instance ? Explain Step by Step.
+ - 
+
+5. How do you ensure that subnet is Public or Private ?
+ - 
+
+6. Suppose you are experencing storage issues for your EC2. How will you troubleshoot this ? How will you Fix.
+ - EBS volume 
+
+7. How will you monitor your EC2 ?
+ - Cloud watch - logs, CPU metrics , 
+
+8. What do you understand by cloudwatch logs and Events ?
+ - Logs : 
+ - Event : Alarms - email triggers
+
+9. Have you used Topic in SNS ?
+ - 
+
+10 . How have you created and utilised topics in SNS. Explain its intergration ?
+ - 
+
+11. Have you worked with Cloud formation ? if Yes, use case.
+- 
+
+12. I have to provide temporary access of 10 mints on one Object which is in private bucket to an user. How will you provide.
+ - presend URLs.
+
+13. Explain Lifecycle rule in S3.
+ - 
+
+14. We have 3 AWS accounts and every account has on VPC. One frontend app is deployed in account A and the rest 2 backend services are in account B and  C. How         will you establish communication between these 3.
+ - Transit gateway
+
+15. I have an application deployed on private EC2 Machine. This application has to fetch some images which are stored in s3. How can this be achieved ?
+ - Using end points with S3.
+
+16. what are the different End points ?
+ - private, gateway, 
+
+17. what are the other endpoints. How will you connect Lambda ? Like EC2 <-> S3 ; EC2 <-> Lambda ; 
+ - 
+
+18. How have you achieved 40% cut down in deployment time as mentioned in resume ? 
+ - 
+
+19. How will you ensure zero downtime for your application ?
+- Bluegreen deployment - Routing traffic to new version and slowly degrading the older version.
+
+20. Can we achieve zero down time upgrade using rollingupdate strategy.
+- Yes
+
+21. when should we use Rolling upgrade and BlueGreen strategy.
+- 
+
+22. How are you utilising AWS Karpenter ?
+- Readuces cost, availability of Node.
+
+23. & 24. I have to create Infrastructure for three different environments like DEV, Staging, Production. How will you manage the State file and the configuration file for them ?
+- workspace concepts, 
+
+25. what are the PRO and CON of using Terraform and cloudFormation.
+- Env history maintance.
+
+26. I have create a VPC andd other infrastructure using terraform. Someone manually changed a rule in security group. If you run terraform apply now, how will it behave.? Let say : VPC, Ec2, and security group(with ingress and degress) as well, so assume I changed the ingress rules and you run the terraform apply Now how does the Pipeline will behave.
+-
+
+27. what do you mean by a statefull and stateless.
+- Statefull -> Standarized application - with a standard volume, network, DNs etc.
+- Stateless -> different port
+
+28. I have to deploy a monitoring tool dynatrace application POD on each node. How will you deploy this dynatrace applicate PODs that it scapes the data out of each node ? Make sure that pod runs on every node.(How will you find the Metrics, scrape the data of each node)
+Or Let say we have 10 PODS and 10 Nodes , how to distribute them equally.
+Note: Dynatrace : its a Monitoring APM tool. 
+- Helm: concept.
+
+
+29. How is the deployment of prometus POD is done.
+- 
+
+
+*. Have you worked with AWS SCS.
+- 
+
+30. I have rds instance for PROD TEST DEV. How will you save cost for DEV and TEST env when QA/DEV team is not testing. what strategy would you implement here to save the cost.
+- Pyhton and AWS Lambda (Just an idea, not sure about the integration).
+
+31. Are you aware about the Jenkins Shared Library ?
+- 
+
+32. Terraform: Your Terraform state file has been corrupted. How will you recover it and make sure that it does not occur again ?
+- Its often stored under S3 or some storage location. So, basically S3 bucket versions are enabled and stored the versions.
+
+32. I have created a VPC manually on AWS. Now you are writting Terraform configuration to create an EC2 inside VPC. How will you do this runtime, or if you dont have access to AWS console and have only VPC name ?
+- With exsisting code - we will go with data source block.
+
+33. You have VPC and RDS modules. RDS needs VPC id before creation, but Both modules called at same time. But how will you handle that RDS module creates RDS only after VPC is created (Handle the dependency with out failure.)
+- Dependon block in Terraform.
+
+34. I have disk space related issues on linux server. Server is getting slow. How will you troubleshoot.
+-> df -h cmd.
+
+35. How will you make your application highly available and scalable ?
+-> scalability: Auto sacaling 
+
+36. What are the different policies that can be implemented in autoscaling group in AWS ?
+- The scaling depending upon the %. and scales - Check on this.
+
+37. How will you troubleshoot if your POD is crashing again and again ?
+- check the status first -> Events -> logs ->
+
+38. What can be the possible cause of Imagepull back off error ?
+- 
+
+39. How will you handle the permission error while running some script in the Linux.?
+- 
+
+40. Difference b/w Git fetch and Git pull.
+-
+
+41. What is Blue ocean in Jenkins.
+-
+
+42. How will you manage some sensitive Information in Jenkins.
+- plung-in
+
+43. How will you explain VPC to a non technical gut like your grandfather ?
+- 
+
+44. How will you explain Cloud to your grandfather ?
+-
+
+45. Can we delete the Image out of which my container is running.
+- 
+
+46. what will happen to the container if you delete the Image.
+-
+
+47. If I have to run some command like install docker as prerequisite in a linux server, How will you automate this ?
+- 
+
+48. Have you used user data in EC2 ?
+- 
+
+49. Have you faced any major challenges and what is your learning from that ?
+- Yeah we face some or the other on daily basis - Like - PROD issues, access issue, . But, the recent times, there was a issue on linux machine where the CPU utilization was going high, even after attaching multiple volumnes, while investigate it deeper, due to some issue on the database and its creating large amount of logs.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
