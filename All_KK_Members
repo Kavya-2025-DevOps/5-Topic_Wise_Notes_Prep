@@ -1,0 +1,41 @@
+===== KK Team members Interviews ========== 
+
+********** Non
+
+For everyone’s reference, I am sharing the internship interview questions
+
+
+Basic linux commands? 
+How to install packages in linux? 
+Do you know shell scripting? How do you rate your knowledge?
+How do you find last 7 days back created files using shell script?
+Jenkins- How do you authenticate Jenkins?
+How do you change port number of Jenkins?
+Which build tools you are using? 
+What are included in pom.xml?
+.war/.jar/.ear- How to identify these files?
+Git commands?
+diff between git pull and git clone?
+Explain Git branching strategy in your organizations?
+where do you use handlers in ansible?
+Have you created cluster in EKS? 
+How do you deploy applications in K8s and explain?
+How do you monitor your applications and explain?
+
+********** 1/Dec/2025
+
+1) How you are managing the certificates of cluster and applications 
+2) Image pullback error is there, what might be the reason and how do you resolve 
+3) Purpose of ingress controller 
+4) explain about core dns and kube proxy 
+5) hpa is not working, if it is the issue metrics server how do you troubleshoot 
+6) I am unable to make communication with the pod/deployment in the same namespace and other namespaces.. 
+networking policies are configured correctly, what would be next level approach to troubleshoot 
+8) are there priority rules applied for network policies?
+7) getting 502 error for the user request, what might be the reason and how do you troubleshoot 
+8) how do you access clusters through command line and how do you switch between two clusters 
+9) user is hitting a request from browser what will be the request flow in Kubernetes cluster to resolve that user request 
+10) how many clusters do you have in environment and what current version of kubernetes using in project 
+11) how do you manage user management in kubernetes cluster 
+12) liveneds probe is failing, how do you check and troubleshoot the issue
+13) which object helps to enable pod-pod communication in cluster
