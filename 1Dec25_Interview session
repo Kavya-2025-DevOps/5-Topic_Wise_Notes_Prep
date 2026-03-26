@@ -129,7 +129,7 @@ What all the Objects you are using in the RBAC. (Roles and Rolebinding)
 --------------------------------------------------------------------------------------
 
 13. what all the service in K8s.
-- Node port, ip, 
+- Node port, cluster ip, Headless IP, Load balancer, 
 
 14. what are you doing on K8s on daily basis, what type of tickets / tasks you are getting.
 
@@ -144,9 +144,73 @@ some reverse proxy, load balancers.
 
 Some of others tickets, -- resource constains, node constrains, PVC binding, Image Pull backup.
 
-45 mints --- 
+------------->  45 - min: Repeated again - Due to Disconnection
 -----------------------------------------------------------------------------------------
-15. 
+
+15. We have a storage class object - it bounds automatically - In what cases it wont bound. 
+  -----> POD restart 
+
+16. Do you have any Helm charts exp -> 
+
+17. Have you created any shared Lib in jenkins -> 
+
+18. Explain the Git Stash, what all cmds you are using here.
+
+19. Assume: 
+I have an app in Dev , everything is test and fine. We got a request to move to PROD. But the pipeline wont work, what       might be the issue.
+----> Check the variables, Credentials, tokens, CPU memory, Infrastucture, 
+
+20. I have dir in Linux, there are many file (like 20 file related to config) - There is a (Private IP - 10.2.37.4 ) I want to change to Public IP in all the place instead of (Private Ip - 10.22.37.6 ) I am not sure HOw many files it has, how many time it has.
+
+----> 
+
+21. Assume: DEVpr complaining - In a dir, Log dir takes more space, why its happening . How do you trouble shoot , what cmds you would you., which file is taking more storage & why.
+
+----> Pull the DEV team, what they worte 
+
+| 1:5 min |
+22. what is the escalation process of your project, how do you esclate problem.
+eg: Customer complaining - In production , 'x' feature is not working.
+-------> *** Yes It often happens - Bussiness team will firt raise and assign to us - Internally we check and identify the criticality. -> if one customer or multiple customers -> 1 customer - we will ask to clear the cache and try again.
+Parallely I'll check with DB - and the time stamp the user tryed, if any other customer tried post that time in log level and DB level. If yes - Its defenetly Customer side issue.
+
+multiple customer - we will also see if any alrets raised, if not - we will go step by step - IT can be a corner case, becoz all cases can not have alerts. see if any new deployments on that service.
+If there are any deployments on that service - we will setup a bridge and bring in other teams.
+while sending the invite - I will attach the issue and my finiding for other to have the context.
+
+-----------------------------------------------------------------------------------------------
+
+          |     Search in ChatGpt      |
+
+
+Like - What all sceanrios question to expect in K8s
+     - Any recent PROD issues - MNC guys faced.
+Any terraform issues, devops guys searched - How they fixed.
+
+| 1:10 |
+
+---> K8s Top most 5 issues customer reported , complete analysis
+---> I want to practise on live - Give complete steps
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
