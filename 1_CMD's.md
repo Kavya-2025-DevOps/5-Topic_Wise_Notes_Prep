@@ -10,9 +10,16 @@
 •	kubectl apply -f <filename.yaml> --dry-run=client --> Its checks for any syntax errors (Image version is not validated)  
 •	kubectl apply -f <filename.yaml> --> POD is created
 
+• kubectl get nodes
+•
+•
+•
+
 
 •	kubctl get pod -n <namespace>  
-•	kubectl desc pod <podname>/<podID> -n <namespace>
+•	kubectl get pod -o wide -n <namespace>  
+• kubectl get all -n <namespace>  
+• kubectl desc pod <podname>/<podID> -n <namespace>  
 
 
 •	kubectl exec --> Used to go inside the container of a POD  
