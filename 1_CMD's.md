@@ -1,6 +1,6 @@
 ----------------------------- **Important CMD's to remember** -------------------------------------------
 
-•	kubectl api-resources -> All Objects are shown
+•	kubectl api-resources -> All Objects are shown  
 •	kubectl get nodes -> will give the number of nodes connected to it
 
 •	kubectl create ns <namespace> --> A New Namespace is created
