@@ -53,4 +53,32 @@
 
 ********************************** **Docker** ************************************
 
+• docker
+• docker -v (Checks for the version)
+
+• docker images (shows all the images) / docker images ls
+• docker ps (display the process ) / docker ps -a (display all, Running stoppedm paused containers)
+• docker info (Client side / server side - details shown, depending on permission)
+• pwd (/home/ubuntu)
+Note: ubuntu is the default user  -> we need to add that user to the docker group - to get permission to view server side
+
+
+Add:  
+sudo usermod -ag docker ubuntu  
+              (apend to group) (group name) (username)
+exit
+reconnect to server
+docker images  
+docker ps  
+docker info  
+ps -ef | grep -i "dockerd" -> docker demon process running in the background  
+docker  
+docker pull ubuntu:latest
+docker rmi
+
+• 
+
+
+
+•
 
